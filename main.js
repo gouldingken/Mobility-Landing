@@ -8,6 +8,7 @@ function validateEmail(email) {
 function submitWithoutRedirect() {
     var $messageBox = $('#message-box');
     var $email = $('#email');
+    var $signUpBtn = $('#signUpBtn');
     var email = $email.val();
     $messageBox.removeClass('msg-error').removeClass('msg-info');
     if (validateEmail(email)) {
@@ -15,11 +16,12 @@ function submitWithoutRedirect() {
         var $iframeFrm = $('#form-iframe');
         var $form = $iframeFrm.contents().find('form');
         $form.find('#i-email').val(email);
-        $email.slideUp();
+        $email.add($signUpBtn).slideUp();
         $iframeFrm.load(function () {
             if (!_formMode) {
                 $('#message-box').addClass('msg-info').text(_thanksText).slideDown('slow').delay(2000).slideUp('slow').queue(function(next) {
                     $email.slideDown().val('');
+                    $signUpBtn.slideDown();
                     next();
                 });
                 _formMode = true;
