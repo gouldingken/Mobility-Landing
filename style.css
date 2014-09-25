@@ -1,0 +1,47 @@
+/*---------------Global----------------*/
+body{
+	background: #00b3d2;
+	color:#fff;
+}
+
+/*---------------font----------------*/
+@font-face{
+
+}
+.content .lead{
+	font-size: 2em;
+}
+.content .lead b{
+	font-weight:normal;
+	background: #f04923;
+}
+.content .lead a,
+.content .lead a:hover{
+	color:#fff;
+}
+.utility span{
+	display:block;
+	font-size:16px;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+
+/*---------------div.utility----------------*/
+.utility .block{
+	padding: 20px 15px;
+	border-bottom: 2px solid #fff;
+}
+.utility #sign-up button{
+	display:block;
+	width: 100%;
+	background:#549aaf;
+	margin: 10px 0;
+}
+.utility #sign-up button:hover,
+.utility #sign-up button:focus{
+	text-decoration:underline;
+	color:#fff;
+	background:#549aaf;
+}
+
+/*---------------logo----------------*/
