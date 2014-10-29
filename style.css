@@ -1,57 +1,67 @@
 /*---------------Global----------------*/
-body{
-	background: #00b3d2;
-	color:#fff;
+body {
+    background: #00b3d2;
+    color: #fff;
 }
 
 /*---------------font----------------*/
-@font-face{
+@font-face {
 
 }
-.content .lead{
-	font-size: 2em;
+
+.content .lead {
+    font-size: 2em;
 }
-.content .lead b{
-	font-weight:normal;
+
+.content .lead b {
+    font-weight: normal;
     background: #00778C;
     padding: 2px 6px;
 }
+
 .content .lead a,
-.content .lead a:hover{
-	color:#fff;
+.content .lead a:hover {
+    color: #fff;
 }
-.utility span{
-	display:block;
-	font-size:16px;
-	margin-bottom:10px;
-	font-weight:bold;
+
+.utility span {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 /*---------------div.utility----------------*/
-.utility .block{
-	padding: 20px 15px;
-	border-bottom: 2px solid #fff;
-}
-.utility #sign-up button{
-	display:block;
-	width: 100%;
-	background:#549aaf;
-	margin: 10px 0;
-}
-.utility #sign-up button:hover,
-.utility #sign-up button:focus{
-	text-decoration:underline;
-	color:#fff;
-	background:#549aaf;
+.utility .block {
+    padding: 20px 15px;
+    border-bottom: 2px solid #fff;
 }
 
-/*---------------logo----------------*/
-.lang-pref {
+.utility #sign-up button {
+    display: block;
+    width: 100%;
+    background: #549aaf;
+    margin: 10px 0;
+}
+
+.utility #sign-up button:hover,
+.utility #sign-up button:focus {
+    text-decoration: underline;
+    color: #fff;
+    background: #549aaf;
+}
+
+.lang-pref-holder {
     position: absolute;
     top: 12px;
     right: 8px;
-    font-size: 0.9em;
+}
+
+.lang-pref {
+    margin-right: 10px;
+    font-size: 1em;
     color: #ffffff;
+    display: inline-block;
 }
 
 #message-box {
@@ -65,6 +75,7 @@ body{
 .msg-error {
     background-color: #ffff00;
 }
+
 .msg-info {
     background-color: white;
     background-color: rgba(255, 255, 255, 0.50);
