@@ -16,10 +16,17 @@ var _getSimplifiedLanguagePrefs = function (callback) {
 
 if (location.search !== '?manual=true') {
     _getSimplifiedLanguagePrefs(function (languagePrefs) {
-        var enPos = languagePrefs.indexOf('en');
-        var esPos = languagePrefs.indexOf('es');
-        if (esPos >= 0 && esPos < enPos) {
-            window.location = 'es.html';
+        for (var i = 0; i < languagePrefs.length; i++) {
+            var lang = languagePrefs[i];
+            if (lang === 'en') return;//--don't redirect if en comes first
+            if (lang === 'es') {
+                window.location = 'es.html';
+                return;
+            }
+            if (lang === 'zh') {
+                window.location = 'zh.html';
+                return;
+            }
         }
     });
 }
