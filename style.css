@@ -53,8 +53,10 @@ body {
 
 .lang-pref-holder {
     position: absolute;
-    top: 12px;
-    right: 8px;
+    top: 4px;
+    right: 4px;
+    background: #00b3d2;
+    padding: 10px 20px;
 }
 
 .lang-pref {
